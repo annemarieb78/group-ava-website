@@ -23,57 +23,61 @@
 
   <body>
     <header>
-      <div>
-        <div class="content-wrapper">
-          <video autoplay muted loop class="video-background">
-            <source src="./img/sunrise-mount-fuji.mp4" type="video/mp4" />
-            <!-- Your browser does not support the video tag. -->
-          </video>
-          <nav class="navbar">
-            <div class="logo">
-              <img src="./img/group-ava-lettering-logo.png" alt="Logo" />
-            </div>
-            <div class="hamburger" id="hamburger">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
-            <div class="nav-wrapper" id="nav-wrapper">
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#team">The Team</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
+      <div class="content-wrapper">
+        <video autoplay muted loop class="video-background">
+          <source src="./img/sunrise.mp4" type="video/mp4" />
+        </video>
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./img/group-ava-lettering-logo.png" alt="Logo" />
+          </div>
+          <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="nav-wrapper" id="nav-wrapper">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#team">The Team</a></li>
+              <li><a href="#about">About</a></li>           
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
 
-          <button>
-            <a class="concept-button" href="#contact">tell us your concept</a>
-          </button>
-
-          <h1>A concept to reality agency</h1>
-          <h2>We help make <span>your</span> anything possible</h2>
-        </div>
+        <h1>A concept to reality agency</h1>
+        <h2>We help make <span>your</span> anything possible</h2>
       </div>
     </header>
 
-    <!-- About -->
-    <section class="about">
+    <!-- Services -->
+    <section class="services" id="services">
       <div class="content-wrapper">
-        <h2>About Us</h2>
-        <p>
-          Group Ava is a team of dynamic, rockstar professionals who get it
-          done. We listen to your needs, identify how we can help, and create a
-          plan-of-action that achieves your goals. Even if you're not sure where
-          to start, we can help with that too.
-        </p>
-        <h3>We get it done, better.</h3>
-      </div>
-      <picture class="about-pic"> <img src="./img/remote-team.jpg" /></picture>
+       
+        <h2>Our Services</h2>
+        <div class="services-list">
+          <a class="service-link" href="" target="_blank">Marketing & PR</a>
+          <a class="service-link" href="" target="_blank"
+            >Event Production & Planning</a
+          >
+          <a class="service-link" href="" target="_blank"
+            >Front-End Web Development</a
+          >
+          <a class="service-link" href="" target="_blank"
+            >Travel & Location Planning</a
+          >
+          <!-- <a class="service-link" href="" target="_blank"
+            >...your concept here!</a
+          > -->
+        </div>
+        <div class="button">
+          <a class="concept-button" href="#contact">tell us your concept</a>
+        </div>
+      </div>     
     </section>
-    <!-- End of About -->
+    <!-- Services -->
 
     <!-- Team -->
     <section class="team-section" id="team">
@@ -166,7 +170,67 @@
     </section>
     <!-- End of Team -->
 
-    <!-- Services -->
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="content-wrapper">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+        <p>
+          Group Ava is a team of dynamic, rockstar professionals who get it
+          done. We listen to your needs, identify how we can help, and create a
+          plan-of-action that achieves your goals. Even if you're not sure where
+          to start, we can help with that too.
+        </p>
+        <h3>We get it done, better.</h3>
+        </div>
+        <picture class="about-pic"> <img src="./img/remote-team.jpg" /></picture>
+      </div>
+      </div>
+    </section>
+    <!-- End of About -->
+
+    <!-- Contact Us -->
+    <footer class="contact" id="contact">
+      <div class="content-wrapper">
+        <!-- <div class="contact-text"> -->
+        <h2>We'd love to hear from you!</h2>
+        <p>Reach out to discover how we can help you! We promise to respond to your message within 24hrs.</p>
+        <!-- </div> -->
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="first-name">First Name*</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name*</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+
+        <div id="success-message" class="success-message"></div>
+      </section>
+      </div>
+    </footer>
+
+    <!-- End of Contact Us -->
 
     <script src="./js/app.js"></script>
   </body>
