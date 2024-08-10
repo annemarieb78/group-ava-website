@@ -210,14 +210,14 @@ header nav ul {
   transform: translate(-50%, -50%);
 }
 
-header h1,
-header h2 {
+header h2,
+header h3 {
   color: #453e4f;
-  width: 98%;
+  width: 95%;
 }
 
-header h2 {
-  padding-top: 15px;
+header h3 {
+  padding-top: 10%;
 }
 
 span {
@@ -237,10 +237,10 @@ span {
   border: 1px solid #453e4f;
   border-radius: 15px;
   width: 100%;
-  height: 2em;
-  font-size: 1.25em;
+  font-size: 1.15em;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 15px 35px;
+  margin-top: 40px;
   color: #453e4f;
 }
 
@@ -252,34 +252,37 @@ span {
 /* Services */
 .services .content-wrapper {
   display: flex;
+
   align-items: center;
-  flex-wrap: wrap;
-  padding: 40px 0 60px 0;
+  flex-direction: column;
+  padding: 60px 0 80px 0;
 }
 
 .services-list {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-  max-width: 300px;
-  padding-bottom: 20px;
+  gap: 20px;
 }
 
 .service-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 20px 0;
   padding: 12px 30px;
   width: 100%;
-
+  max-width: 300px;
+  height: 4em;
   text-transform: uppercase;
-  font-size: 1.125em;
+  font-size: 1em;
   background-color: #351d77;
   color: #fff;
   border-radius: 15px;
+  box-sizing: border-box;
 }
 
 .service-link a {
@@ -296,7 +299,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 60px 20px;
+  padding: 60px 20px 80px 20px;
   background-color: #f7f7f7;
   text-align: center;
 }
@@ -383,7 +386,7 @@ span {
 .about .content-wrapper {
   display: flex;
   align-items: center;
-  padding: 60px 0;
+  padding: 60px 0 80px 0;
 }
 
 .about-content {
@@ -403,6 +406,7 @@ span {
   height: auto;
   width: 100%;
   object-fit: cover;
+  padding-top: 30px;
 }
 
 /* Contact Section */
@@ -411,12 +415,21 @@ span {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 60px 20px;
+  padding: 60px 0;
   background-color: #d6e5f7;
 }
 
 .contact .content-wrapper {
-  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .contact h2,
@@ -426,7 +439,42 @@ span {
   width: 95%;
 }
 
-.contact-form {
+.social-header ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.envelope-icon {
+  padding: 0 10px 0 0;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 70%;
+  max-width: 266px;
+  padding-bottom: 30px;
+}
+
+.email-link {
+  line-height: 36px;
+}
+
+.social-icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.copyright {
+  margin: 80px 0 0 0;
+}
+
+/* contact form */
+/* .contact-form {
   display: flex;
   flex-direction: column;
   max-width: 90%;
@@ -478,8 +526,8 @@ span {
 .success-message {
   margin-top: 20px;
   font-size: 1.2em;
-  color: #28a745; /* Green color for success */
-  visibility: hidden; /* Initially hidden */
+  color: #28a745; 
+  visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -487,7 +535,7 @@ span {
 .success-message.visible {
   visibility: visible;
   opacity: 1;
-}
+} */
 
 /* ==========================================================================
    Helper classes
@@ -599,12 +647,6 @@ span {
 
   header h2 {
     padding-top: 8%;
-  }
-
-  /* Concept Button */
-  .concept-button {
-    font-size: 1.5em;
-    height: 1.5em;
   }
 
   /* Services */
@@ -732,7 +774,7 @@ span {
 
   header h2 {
     font-size: 3em;
-    padding-top: 15%;
+    padding-top: 10%;
   }
 
   span {

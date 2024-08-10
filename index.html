@@ -41,21 +41,20 @@
               <li><a href="#home">Home</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#team">The Team</a></li>
-              <li><a href="#about">About</a></li>           
+              <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </nav>
 
-        <h1>A concept to reality agency</h1>
-        <h2>We help make <span>your</span> anything possible</h2>
+        <h2>A concept to reality agency</h2>
+        <h3>We help make <span>your</span> anything possible</h3>
       </div>
     </header>
 
     <!-- Services -->
     <section class="services" id="services">
       <div class="content-wrapper">
-       
         <h2>Our Services</h2>
         <div class="services-list">
           <a class="service-link" href="" target="_blank">Marketing & PR</a>
@@ -63,7 +62,7 @@
             >Event Production & Planning</a
           >
           <a class="service-link" href="" target="_blank"
-            >Front-End Web Development</a
+            >Front End Web Development</a
           >
           <a class="service-link" href="" target="_blank"
             >Travel & Location Planning</a
@@ -75,7 +74,7 @@
         <div class="button">
           <a class="concept-button" href="#contact">tell us your concept</a>
         </div>
-      </div>     
+      </div>
     </section>
     <!-- Services -->
 
@@ -176,16 +175,18 @@
         <h2>About Us</h2>
         <div class="about-content">
           <div class="about-text">
-        <p>
-          Group Ava is a team of dynamic, rockstar professionals who get it
-          done. We listen to your needs, identify how we can help, and create a
-          plan-of-action that achieves your goals. Even if you're not sure where
-          to start, we can help with that too.
-        </p>
-        <h3>We get it done, better.</h3>
+            <p>
+              Group Ava is a team of dynamic, rockstar professionals who get it
+              done. We listen to your needs, identify how we can help, and
+              create a plan-of-action that achieves your goals. Even if you're
+              not sure where to start, we can help with that too.
+            </p>
+            <h3>We get it done, better.</h3>
+          </div>
+          <picture class="about-pic">
+            <img src="./img/remote-team.jpg"
+          /></picture>
         </div>
-        <picture class="about-pic"> <img src="./img/remote-team.jpg" /></picture>
-      </div>
       </div>
     </section>
     <!-- End of About -->
@@ -193,11 +194,55 @@
     <!-- Contact Us -->
     <footer class="contact" id="contact">
       <div class="content-wrapper">
-        <!-- <div class="contact-text"> -->
-        <h2>We'd love to hear from you!</h2>
-        <p>Reach out to discover how we can help you! We promise to respond to your message within 24hrs.</p>
-        <!-- </div> -->
-        <form id="contact-form" class="contact-form">
+        <div class="contact-text">
+          <h2>We'd love to hear from you!</h2>
+          <p>
+            Reach out to discover how we can help you! We promise to respond to
+            your message within 24hrs.
+          </p>
+        </div>
+        <div class="email">
+          <a class="email-link" href="mailto:katie@groupava.com"
+            ><img
+              class="envelope-icon"
+              src="img/envelope.png"
+              alt="envelope"
+            />katie@groupava.com</a
+          >
+          <a class="email-link" href="mailto:annemarie@groupava.com"
+            ><img
+              class="envelope-icon"
+              src="img/envelope.png"
+              alt="envelope"
+            />annemarie@groupava.com</a
+          >
+          <a class="email-link" href="mailto:leslie@groupava.com"
+            ><img
+              class="envelope-icon"
+              src="img/envelope.png"
+              alt="envelope"
+            />leslie@groupava.com</a
+          >
+        </div>
+
+        <div class="social">
+          <h3 class="social-header">Or, follow us on social media:</h3>
+          <div class="social-icons">
+            <ul>
+              <li>
+                <a href="facebook.com"><img src="img/facebook.png" /></a>
+              </li>
+              <li>
+                <a href="instagram.com"><img src="img/instagram.png" /></a>
+              </li>
+              <li>
+                <a href="linkedin.com"><img src="img/linkedin.png" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <form id="contact-form" class="contact-form">
           <div class="form-group">
             <label for="first-name">First Name*</label>
             <input type="text" id="first-name" name="first-name" required />
@@ -225,8 +270,16 @@
           <button type="submit" class="submit-button">Send Message</button>
         </form>
 
-        <div id="success-message" class="success-message"></div>
-      </section>
+        <div id="success-message" class="success-message"></div> -->
+        <div class="copyright">
+          <p>
+            Copyright
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            | Group Ava
+          </p>
+        </div>
       </div>
     </footer>
 
