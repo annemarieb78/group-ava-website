@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -319,7 +320,7 @@ span {
 
 .team-card {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -397,26 +398,32 @@ span {
   font-size: 1em;
 }
 
+.about-text p {
+  width: 100%;
+}
+
 .about-pic {
   display: flex;
   justify-content: center;
+  padding-top: 30px;
 }
 
 .about-pic img {
   height: auto;
   width: 100%;
   object-fit: cover;
-  padding-top: 30px;
+  border-radius: 15px;
 }
 
 /* Contact Section */
 .contact {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 60px 0;
-  background-color: #d6e5f7;
+  background-color: #f7f7f7;
 }
 
 .contact .content-wrapper {
@@ -432,8 +439,13 @@ span {
   padding: 0 20px;
 }
 
-.contact h2,
-.contact p {
+.contact-text p {
+  margin-bottom: 40px;
+  color: #453e4f;
+  width: 75%;
+}
+
+.contact h2 {
   margin-bottom: 40px;
   color: #453e4f;
   width: 95%;
@@ -445,6 +457,7 @@ span {
 }
 
 .envelope-icon {
+  font-size: 1.25em;
   padding: 0 10px 0 0;
 }
 
@@ -452,7 +465,6 @@ span {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 70%;
   max-width: 266px;
   padding-bottom: 30px;
 }
@@ -464,13 +476,17 @@ span {
 .social-icons ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  font-size: 1.5em;
   width: 100%;
   padding-top: 30px;
 }
 
 .copyright {
-  margin: 80px 0 0 0;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-top: 80px;
 }
 
 /* contact form */
@@ -646,6 +662,11 @@ span {
   }
 
   header h2 {
+    font-size: 2em;
+  }
+
+  header h3 {
+    font-size: 1.5em;
     padding-top: 8%;
   }
 
@@ -688,6 +709,7 @@ span {
 
   .about h2 {
     padding-bottom: 60px;
+    margin: 0;
   }
 
   .about-content {
@@ -700,28 +722,53 @@ span {
     padding: 40px;
   }
 
-  .about h2 {
-    margin: 0;
-  }
-
   /* Contact Us */
-  .contact {
-    background-color: #d6e5f7;
-  }
-
   .contact .content-wrapper {
+    width: 95%;
+  }
+  .contact-email-social {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    gap: 20px;
   }
 
-  .contact-form {
+  .contact-text p {
+    width: 70%;
+    font-size: 1.15em;
+  }
+
+  .social-header {
+    margin-top: 5px;
+  }
+
+  .envelope-icon {
+    padding: 0 10px 0 0;
+  }
+
+  .email {
+    width: 40%;
+  }
+
+  .social {
+    width: 40%;
+  }
+
+  .copyright {
+    width: 70%;
+    margin: 40px 0;
+  }
+
+  /* .contact-form {
     width: 70%;
   }
 
   label,
   input {
     background-color: #d6e5f7;
-  }
+  } */
 }
 
 @media all and (max-width: 767px) {
@@ -755,24 +802,25 @@ span {
     height: 700px;
   }
 
-  .nav-wrapper {
+  .logo img {
+    height: auto;
+    width: 85%;
+  }
+
+  .navbar {
     display: flex;
+    justify-content: space-around;
   }
 
-  header nav ul li a {
-    padding: 10px;
-  }
-
-  header nav ul li a:hover {
-    background-color: #f48edc;
-    border-radius: 15px;
-  }
-
-  header h1 {
-    font-size: 2em;
+  .nav-wrapper {
+    font-size: 1.25em;
   }
 
   header h2 {
+    font-size: 2em;
+  }
+
+  header h3 {
     font-size: 3em;
     padding-top: 10%;
   }
@@ -817,6 +865,33 @@ span {
 
   .team-photo {
     height: 400px;
+  }
+
+  /* About */
+  .about-content {
+    width: 60%;
+  }
+
+  .about-text {
+    padding: 40px;
+  }
+
+  .about-text p {
+    width: 80%;
+  }
+
+  /* Contact */
+  .contact-email-social {
+    padding-top: 40px;
+    width: 70%;
+  }
+
+  .contact-text p {
+    width: 70%;
+  }
+
+  .copyright {
+    margin-top: 80px;
   }
 }
 
